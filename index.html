@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>hàm tính bình phương của một số bất kỳ</title>
+</head>
+<body>
+    <p id="outputResult"></p>
+    <p>
+        <label>Enter a number:</label><br>
+        <input id="number" type="number" placeholder="Number"
+               oninput="countF(this.value)"
+               onchange="countF(this.value)">
+    </p>
+    <script type="text/javascript">
+        function countF(valNum) {
+            let result = Math.pow(Number(valNum), 2);
+            document.getElementById("outputResult").innerText = valNum+'^2 = '+result;
+        }
+    </script>
+</body>
+</html>
